@@ -641,3 +641,31 @@ button {
     | outline: 2px solid orange;
     |============================
   */
+  /**
+    |============================
+    | Modal window
+    |============================
+  */
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(46, 47, 66, 0.4);
+  }
+  .modal {
+    position: absolute;
+    min-height: 576px;
+    width: 408px;    
+    top: calc(50% - 288px);
+    left: calc(50% - 204px);
+    background-color: rgba(252, 252, 252, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    
+  }
+  .modal-button {
+  }
+  .modal-icon {
+  }
