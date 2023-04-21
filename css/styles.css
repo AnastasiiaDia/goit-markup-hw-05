@@ -97,7 +97,7 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   position: relative; 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func);
 }
 .nav-list-item:nth-last-child {margin-right: 0px;}
 
@@ -106,9 +106,7 @@ body {
 .nav-list-item:active {
   color: var(--pressed-state-color);}
   
-/* .nav-list-item:hover,
-.nav-list-item:focus,
-.nav-list-item:active {transition:250ms cubic-bezier(0.4, 0, 0.2, 1);} */
+
 
 .nav-list-item::after {
   content: "";
@@ -150,16 +148,14 @@ body {
   color: var(--body-text-color);
   padding-top: 24px;
   padding-bottom: 188px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func);
 }
 .address-contact:active,
 .address-contact:focus,
 .address-contact:hover {
   color: var(--pressed-state-color);
 }
-/* .address-contact:active,
-.address-contact:focus,
-.address-contact:hover {transition:250ms cubic-bezier(0.4, 0, 0.2, 1)} */
+
 
 /**
   |============================
@@ -211,16 +207,13 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin: 0 auto;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-dur-and-func);
 }
 .button-order:hover,
 .button-order:focus,
 .button-order:active {
   background-color: var(--pressed-state-color);
 }
-/* .button-order:hover,
-.button-order:focus,
-.button-order:active {transition:250ms cubic-bezier(0.4, 0, 0.2, 1)} */
   
 
 /**
@@ -291,7 +284,7 @@ body {
   padding: 12px 24px;
   border: 1px solid var(--button-border-color);
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func), background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
 }
 .button:hover,
 .button:focus,
@@ -302,11 +295,7 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-/* .button:hover,
-.button:focus,
-.button:active
-{transition:250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+
 
 .button-list {
   display: flex;
@@ -355,9 +344,7 @@ body {
   border-radius: 0px 0px 4px 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .our-team-item:hover {
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
+
 .team-list {
   display: flex;
   flex-wrap: wrap;
@@ -378,9 +365,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   text-transform: capitalize;
   color: var(--main-header-color);
 }
-/* .team-sm-container {
-  
-  } */
+
 .team-sm-list {
   width: 232px;
   height: 40px;
@@ -402,14 +387,13 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   justify-content: center;
   background-color: var(--primary-brand-color);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-dur-and-func);
 }
 .team-sm-link:hover,
 .team-sm-link:focus {
   background-color: #404bbf;
 }
-/* .team-sm-link:hover,
-.team-sm-link:focus {transition:250ms cubic-bezier(0.4, 0, 0.2, 1)} */
+
 /**
   |============================
   | 5 Customers
@@ -420,10 +404,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   align-items: center;
   gap: 24px;
 }
-/* .customers-item {
-width: 168px;
-height: 88px;
-} */
+
 .customers-list {  
   display: flex;
   gap: 24;
@@ -438,7 +419,7 @@ border: 1px solid var(--customers-icon-color);
 border-radius: 4px;
 color: var(--customers-icon-color);
 
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: color var(--transition-dur-and-func), border var(--transition-dur-and-func);
 }
 
 .customers-link:hover,
@@ -446,21 +427,18 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(
   border: 1px solid var(--pressed-state-color);
   color: var(--pressed-state-color);
 }
-/* .customers-link:hover,
-.customers-link:focus {transition:250ms cubic-bezier(0.4, 0, 0.2, 1)} */
-
-/* .customers-icon:hover,
-.customers-icon:focus {
-  fill: var(--pressed-state-color);
-} */
-.customers-icon:hover,
-.customers-icon:focus {transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .customers-icon { 
 fill: currentColor;
-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: var(--transition-dur-and-func);
 }
+
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--pressed-state-color);
+}
+
+
 /* .team-wrapper::after {
   content: "";
   display: flex;
@@ -524,7 +502,7 @@ margin-bottom: 16px;
 display: inline-block;
 flex-wrap: wrap;
 
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color var(--transition-dur-and-func);
 }
 .footer-sm-list {
   width: 232px;
@@ -606,6 +584,7 @@ button {
     display:block;
     position: relative;    
     overflow: hidden; 
+    transition: box-shadow var(--transition-dur-and-func);
   }
     
   .card-set-link:hover,
@@ -672,18 +651,15 @@ button {
     transition: opacity 300ms, visibility 300ms;
   }
   .modal {
-    position: absolute;
-    /* top: 24px; */
+    position: absolute;   
     min-height: 576px;
     width: 408px;    
     top: 50%;
     left: 50%;
     background-color: rgba(252, 252, 252, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    /* padding: 24px; */
-    transform: translate(-50%, -50%); 
-    
+    border-radius: 4px;    
+    transform: translate(-50%, -50%);    
     
   }
    .is-hidden {
@@ -710,7 +686,7 @@ button {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     padding: 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-dur-and-func);
   }
   .modal-close-button:hover,
   .modal-close-button:focus {
@@ -723,6 +699,5 @@ button {
   .modal-close-button:hover .modal-icon,
   .modal-close-button:focus .modal-icon {
     fill: var(--white-background-color);
-
   }
  
