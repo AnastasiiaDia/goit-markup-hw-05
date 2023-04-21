@@ -127,7 +127,7 @@ body {
   height: 4px;
   border-radius: 4px;
   position: absolute;  
-  bottom:0;
+  bottom: -1px;
   background-color: var(--pressed-state-color);
 }
   /**
