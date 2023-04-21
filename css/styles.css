@@ -128,6 +128,9 @@ body {
   bottom: -1px;
   background-color: var(--pressed-state-color);
 }
+.current {
+  color: var(--pressed-state-color);
+}
   /**
     |============================
     | address-list
@@ -403,18 +406,25 @@ body {
   display: flex;
   align-items: center;
   gap: 24px;
+  /* width: 168px;
+  height: 88px; */
 }
 
 .customers-list {  
   display: flex;
   gap: 24;
+  
   }
+.customers-item {
+width: 168px;
+height: 88px; 
+}
 .customers-link {
 display: flex;
 align-items: center;
 justify-content: center;
-width: 168px;
-height: 88px;
+width: 100%;
+height: 100%;
 border: 1px solid var(--customers-icon-color);
 border-radius: 4px;
 color: var(--customers-icon-color);
